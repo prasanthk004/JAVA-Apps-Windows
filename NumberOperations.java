@@ -78,12 +78,12 @@ public void StrongNumber()
 	
 	if(number==sum)
 	{
-		System.out.println(" Given Number is StrongNumber");
+		System.out.println(" \n Given Number is StrongNumber");
 		
 	}
 	else
 	{
-		System.out.println(" Given number is not a Strong Number");
+		System.out.println(" \n Given number is not a Strong Number");
 	}
 }
 
@@ -135,9 +135,9 @@ public void perfectNumber()
 		// TODO Auto-generated method stub
 		
 		NumberOperations n = new NumberOperations(10);
-		//System.out.println(n.findFactorial(4));
-		//n.neonNumber();
-		//n.StrongNumber()
+		System.out.println(n.findFactorial(4));
+		n.neonNumber();
+	    n.StrongNumber();
 		n.perfectNumber();
 
 	}
