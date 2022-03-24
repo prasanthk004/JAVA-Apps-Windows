@@ -10,7 +10,7 @@ public class DigitsOperations {
 	}
 	
 	public static void main(String[] args) {
-		DigitsOperations d = new DigitsOperations(9999);
+		DigitsOperations d = new DigitsOperations(95);
 		// d.findDigitsCount();
 		// d.AdditionOfDigits();
 		 System.out.printf("\n\n\n\n");
@@ -20,7 +20,7 @@ public class DigitsOperations {
 	
 	
 	 
-	public void AddDigitsUsingle(int x) //Using recursive function until single digit
+	public void AddDigitsUsingle(int x) //Using recursive function to add digits until single digit
 	{
 		 int n ;
 		  n=x;
@@ -40,7 +40,7 @@ public class DigitsOperations {
 		  if(dgc>1)
 		  {
 			  
-			  //System.out.println(res); 
+			 
 			  AddDigitsUsingle(res);
 			
 			
@@ -50,19 +50,7 @@ public class DigitsOperations {
 			 System.out.println(res); 
 		  }
 		  
-	/*	 if(dgc==1)
-		 {
-			 System.out.println(res);
-			 
-			 
-		 }
-		 else
-		 {
-			 AddDigitsUsingle(res);
-			 System.out.println(res);
-		 }
- */
-	 
+	
 		
 	}
 
