@@ -4,7 +4,10 @@ public class pattern {
 	
 	public static void main(String[] args) {
 		pattern p = new pattern();
-		//p.numPattern();
+		p.numPattern();
+		System.out.println();
+		System.out.println();
+		
 		p.numPattern1();
 	}
 
