@@ -2,7 +2,7 @@ package Java.basics;
 
 public class Divisiors {
 	
-	
+	//Divisiors
 	int num ;
 
 	public Divisiors() {
