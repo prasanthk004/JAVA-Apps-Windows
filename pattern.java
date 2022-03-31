@@ -24,7 +24,7 @@ public class pattern {
 	 }
 	
 	}
-
+       // Patterns
 	private void numPattern() {
 		// TODO Auto-generated method stub
 		
@@ -46,7 +46,7 @@ public class pattern {
 		
 	}
 	
-	
+
 	
 
 
