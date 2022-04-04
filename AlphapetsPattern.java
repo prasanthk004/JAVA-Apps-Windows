@@ -13,7 +13,12 @@ public class AlphapetsPattern {
 		name.S();
 		System.out.println();
 		name.A();
-
+		System.out.println();
+		name.N();
+		System.out.println();
+		name.T();
+		System.out.println();
+		name.H();
 	}
 
 	private void P() {
@@ -164,6 +169,67 @@ public class AlphapetsPattern {
 
 		}
 
+	}
+
+	private void N() {
+		// TODO Auto-generated method stub
+		int row, col;
+
+		for (row = 1; row <= 10; row++) {
+			for (col = 1; col <= 7; col++) {
+				if (col == 1 || col == row || col == 7 && row <= 7) {
+					System.out.print("* ");
+				} else {
+					System.out.print("  ");
+				}
+
+			}
+			System.out.println();
+		}
+	}
+
+	private void T() {
+		// TODO Auto-generated method stub
+		int row, col;
+
+		for (row = 1; row <= 10; row++) {
+			for (col = 1; col <= 7; col++) {
+				if (row == 1) {
+					System.out.print("* ");
+				} else if (row >= 1) {
+					if (col == 4) {
+						System.out.print("* ");
+					} else {
+						System.out.print("  ");
+					}
+
+				}
+
+			}
+			System.out.println();
+		}
+	}
+
+	private void H() {
+		// TODO Auto-generated method stub
+		int row, col;
+
+		for (row = 1; row <= 10; row++) {
+			for (col = 1; col <= 7; col++) {
+				if (row == 5) {
+					System.out.print("* ");
+				} else if (row >= 1) {
+					if (col == 1 || col == 7) {
+						System.out.print("* ");
+					} else {
+						System.out.print("  ");
+					}
+
+				}
+
+			}
+			System.out.println();
+		}
 	}
 
 }
