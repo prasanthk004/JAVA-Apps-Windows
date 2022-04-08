@@ -4,41 +4,101 @@ public class ArrayLearn {
 	
 	
 	 String[] n= {"KP","MK","AS","EL","MB"};
+	 int a[]= {98,98,55,66,45,5,5,10,10};
 	public static void main(String[] args) {
 		ArrayLearn a = new ArrayLearn();
 		//a.SwapValues();
 		//a.SwapRight();
 		a.FindMax();
+		System.out.println();
+		a.FindMin();
 	}
+	
+	
+	private void FindMin() {
+		// TODO Auto-generated method stub
+		int min=2147483647,smin=2147483647 ;
+		int i ;
+		
+		for(i=0;i<a.length;i++)
+		{
+			if(a[i]<min)
+			{
+				smin=min;
+				min=a[i];
+				
+								
+			}	
+			else if (a[i]<smin&&a[i]!=min)
+			{
+				smin=a[i];
+			}
+			
+		
+
+			
+		}
+		
+		System.out.println(" Minimum  : "+min);
+		System.out.println(" Sminimum : "+smin);		
+		
+		
+		
+	}
+
 
 	private void FindMax() {
 		// TODO Auto-generated method stub
-		int[] marks= {90,92,88,65,55};
-		
-		int max=marks[0],  smax=marks[0],min=marks[0],smin=marks[0];
+		int max=-2147483648 , smax=-2147483648; // Initiliazing with least value of integer to find maximum 
 		int i ;
-		for(i=0;i<marks.length;i++)
+		//int a[]= {98,95,55,66,45};
+
+		for(i=0;i<a.length;i++)
 		{
-			if(marks[i]>max)
+			if(a[i]>max)
 			{
 				smax=max;
-				max=marks[i];
+				max=a[i];
 			}
-			if(marks[i]<min)
+			else if(a[i]>smax&&max!=a[i])
 			{
-				smin=min;
-				min=marks[i];
-				
+				smax=a[i];
 			}
+			
+			
 		}
+		System.out.println("        Maximum    : "+max);
+		System.out.println(" Second Maximum    : "+smax);
+
 		
-		System.out.println("First Maximum Mark   : "+max);
-		System.out.println("Second Maximum Mark  : "+smax);
-		System.out.println("Minimum Mark         : "+min);
-		System.out.println("Second Minimum Mark  : "+smin);
+
 		
-		 
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	private void SwapRight() {
 		// TODO Auto-generated method stub
