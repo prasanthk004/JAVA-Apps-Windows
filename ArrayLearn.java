@@ -1,5 +1,7 @@
 package Java.basics;
 
+import java.util.Scanner;
+
 public class ArrayLearn { 
 	
 	
@@ -13,6 +15,8 @@ public class ArrayLearn {
 		System.out.println();
 		a.FindMin();
 	}
+	
+	
 	
 	
 	private void FindMin() {
@@ -75,26 +79,29 @@ public class ArrayLearn {
 		
 	}
 
+ public void InputAndDisplay()
+ {
+	 int[] a= new int [10] ;
+	 
+	 int i =0 ; 
+	 Scanner in = new Scanner(System.in);
+	 
+	 // Getting inputs from Users 
+	 for(i=0 ; i<a.length;i++)
+	 {
+		 System.out.printf(" Enter Value %d : ",i+1);
+		 a[i]=in.nextInt();
+	 }
+	 
+	 // Displaying Array values 
+	 
+	 for(i=0 ; i<a.length;i++)
+	 {
+		 System.out.printf("  Value %d : %d",i+1,a[i]);
+	 
+	 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ }
 
 
 
