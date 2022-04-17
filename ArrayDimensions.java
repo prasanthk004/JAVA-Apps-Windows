@@ -10,6 +10,7 @@ public class ArrayDimensions {
 		ArrayDimensions a = new ArrayDimensions();
 	//	a.TwoDArray();
 		a.AddMatrix();
+		a.MatrixMul();
 	}
 	
 
