@@ -15,6 +15,18 @@ public class ArrayDimensions {
 	
 
 	
+	private void MatrixMul() {
+		// TODO Auto-generated method stub
+		
+		int a[][]=new int [2][2];
+		int b[][]=new int[2][2];
+		int c[][]=new int[2][2];
+		
+		
+	}
+
+
+
 	private void TwoDArray() {
 		// TODO Auto-generated method stub
 		
