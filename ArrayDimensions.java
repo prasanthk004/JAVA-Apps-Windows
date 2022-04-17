@@ -19,8 +19,8 @@ public class ArrayDimensions {
 		// TODO Auto-generated method stub
 		
 		int a[][]=new int [2][2];
-		int b[][]=new int[2][2];
-		int c[][]=new int[2][2];
+		int b[][]=new int[2][15];
+		int D[][]=new int[2][15];
 		
 		
 	}
