@@ -8,14 +8,16 @@ public class ArrayDimensions {
 	public static void main(String[] args) {
 		
 		ArrayDimensions a = new ArrayDimensions();
-		a.TwoDArray();
+	//	a.TwoDArray();
+		a.AddMatrix();
 	}
 	
 
+	
 	private void TwoDArray() {
 		// TODO Auto-generated method stub
 		
-		int a[][]=new int[2][5];
+		int a[][]=new int[250][5];
 		Random r = new Random();   
 
 		
@@ -45,5 +47,76 @@ public class ArrayDimensions {
 		
 		
 	}
+	
+	
+	
+	private void AddMatrix() {
+		// TODO Auto-generated method stub
+		int a[][]=new int [3][3];
+		int b[][]=new int[3][3];
+		int c[][]=new int[3][3];
+		
+		int i , j ;
+		
+		Random r=new Random();
+		
+	// Getting Inputs for Array A Using Random Numbers 
+		System.out.printf("\n\n");
+		System.out.println(" Matrix A   : ");
+		System.out.printf("\n\n");
+		
+		for(i=0;i<a.length;i++)
+			
+		{
+			 
+			for(j=0;j<a[i].length;j++)
+			{
+				a[i][j]=r.nextInt(9)+1;
+				System.out.printf(" %3d ",a[i][j]);
+			}
+			System.out.println();
+		
+		}
+		
+		
+		// Getting Inputs for Array B Using Random Numbers 
+		System.out.printf("\n\n");
+		System.out.println(" Matrix B   : ");
+		System.out.printf("\n\n");
+			
+			for(i=0;i<b.length;i++)
+			{
+				for(j=0;j<b[i].length;j++)
+				{
+					b[i][j]=r.nextInt(9)+1;
+					System.out.printf("%3d",b[i][j]);
+				}
+				System.out.println();
+
+			}
+			
+			
+		// Adding Matrix A & B 
+			
+			System.out.printf("\n\n");
+			
+			System.out.println(" Matrix C   : ");
+			System.out.printf("\n\n");
+			for(i=0;i<b.length;i++)
+			{
+				for(j=0;j<b[i].length;j++)
+				{
+					c[i][j]=a[i][j]+b[i][j];
+					System.out.printf("%3d",c[i][j]);
+				}
+				System.out.println();
+
+			}
+			
+		
+		
+	}
+
+
 
 }
