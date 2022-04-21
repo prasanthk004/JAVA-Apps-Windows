@@ -2,11 +2,11 @@ package Java.basics;
 
 public class StringOperations {
 	
-	String x;
+	  String x;
+
 	
 	
-	
-	public String getX() {
+ 	public String getX() {
 		return x;
 	}
 
@@ -17,14 +17,40 @@ public class StringOperations {
 	public static void main(String[] args) {
 		StringOperations s = new StringOperations();
 		s.setX("My N KP8 @@ ");
-		s.StringAnalysis();
-		
+	//	s.StringAnalysis();
+	  
+		s.subString(0,4);
 
+	}
+
+	private void subString(int a, int b) {
+		// TODO Auto-generated method stub
+		
+		int i ;
+        try {
+        	
+        	if(a>x.length())
+        	{
+        		
+        	}
+        		
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			
+		}
+		
+		
+		
+		for(i=a;i<b;i++)
+		{
+			System.out.printf(" %c",x.charAt(i));
+		}
 	}
 
 	public  void StringAnalysis() {
 		// TODO Auto-generated method stub
-		
+	
 		int i ;
 		int ac=0,sc=0,nc=0,Cc=0,Smc=0,oc=0,wc=0;
 		char c ;

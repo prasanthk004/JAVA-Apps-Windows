@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class SearchArray {
 	
-	
+	String dd;
 	public static void main(String[] args) {
 		SearchArray ar = new SearchArray();
 	//	ar.LinearSearch();
@@ -12,7 +12,8 @@ public class SearchArray {
 		//ar.SortArrayDescend();	
 	 //int ap[]= {17,4,5,19,25,44,98};
 		ar.BinarySearch();
-	//ar.SortArrayAscend(ap);
+	//ar.SortArrayAscend(ap)
+  
 		
 	}
 
