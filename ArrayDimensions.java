@@ -9,8 +9,20 @@ public class ArrayDimensions {
 		
 		ArrayDimensions a = new ArrayDimensions();
 	//	a.TwoDArray();
-		a.AddMatrix();
-		a.MatrixMul();
+	//	a.AddMatrix();
+	//	a.MatrixMul();
+	System.out.println(a.getClass());
+	System.out.println(a.hashCode());
+	System.out.println(a.getClass());
+	System.out.println(System.identityHashCode(a));
+	
+
+	}
+	
+	public int hashCode()
+	{
+		return 0;
+		
 	}
 	
 

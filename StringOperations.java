@@ -2,15 +2,27 @@ package Java.basics;
 
 public class StringOperations {
 	
-	String x="k p 8@";
+	String x;
 	
+	
+	
+	public String getX() {
+		return x;
+	}
+
+	public void setX(String x) {
+		this.x = x;
+	}
+
 	public static void main(String[] args) {
 		StringOperations s = new StringOperations();
+		s.setX("My N KP8 @@ ");
 		s.StringAnalysis();
+		
 
 	}
 
-	private void StringAnalysis() {
+	public  void StringAnalysis() {
 		// TODO Auto-generated method stub
 		
 		int i ;
@@ -46,6 +58,7 @@ public class StringOperations {
 			}			
 			else
 			{
+				if(c!=' ')
 				oc++;
 			}
 			
@@ -69,7 +82,7 @@ public class StringOperations {
 			chrc++;
 		}
 		if(x.charAt(x.length()-1)!=' ') wc++; // IF last character is not space  adding word count mannually "
-	 System.out.println("  STRING ANALYSIS ");
+	    System.out.println("  STRING ANALYSIS ");
 		System.out.println("  -------------- ");
 		System.out.printf("\n\n");
 		System.out.println(" Total Characters  : "+chrc);
