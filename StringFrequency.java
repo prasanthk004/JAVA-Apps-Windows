@@ -1,5 +1,7 @@
 package Java.basics;
 
+import java.util.Scanner;
+
 public class StringFrequency extends StringOperations
 
 {
@@ -19,8 +21,15 @@ public class StringFrequency extends StringOperations
 	private void FindFrequency() {
 		// TODO Auto-generated method stub
 		int i,j ; 
-		s="Prasanth PK";
+	 
+		s=" ";
 		int count=0;
+	
+		Scanner sc=new Scanner(System.in);
+		
+		
+		System.out.printf("\n Enter the String : ");
+		s=sc.nextLine();
 		int frq[]=new int[s.length()];
 		
 		for(i=0;i<s.length();i++)
@@ -60,15 +69,44 @@ public class StringFrequency extends StringOperations
 		System.out.println();
 		System.out.println();
 		
-		System.out.println(" More than 1 time occurance ");	
+		System.out.printf(" More than 1 time occurance ");	
 		
 		for(i=0;i<s.length();i++)
 		{
 			if(frq[i]>1)
-				System.out.printf(" %c",s.charAt(i));			 
+				System.out.printf(" %c",s.charAt(i));	
+			
 			
 		}
+		
+		//Finding most frequent characters 
+	 
+		
+		int max=0;
+		int pos=0;
+		int smax=0;
+		int pos1=0;
+		
+		for(i=0;i<s.length();i++)
+		{
+			if(frq[i]>max)
+			{
+				smax=max;
+				max=frq[i];
+				
+				pos=i;
+			}
+			else if(frq[i]>smax&&frq[i]!=max)
+			{
+				smax=frq[i];
+				pos=i;
+			}
 			
+		}
+		System.out.printf("\n max %d smax %d",max,smax);
+		System.out.printf("\n\n\n\n");
+		System.out.println(" Most frqeunt character is "+s.charAt(pos)+"\n Total Occurance : "+max);
+		System.out.println(" Second most frqeunt character is "+s.charAt(pos1)+"\n Total Occurance : "+smax);
 	
 	}
 	

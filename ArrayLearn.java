@@ -61,8 +61,9 @@ public class ArrayLearn {
 		{
 			if(a[i]>max)
 			{
-				smax=max;
+				
 				max=a[i];
+				
 			}
 			else if(a[i]>smax&&max!=a[i])
 			{
