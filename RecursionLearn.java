@@ -18,7 +18,7 @@ public class RecursionLearn {
 	 System.out.println(r.FactorialRecursive(5));	
 	  
 	//  Unity Number is sum of digits  given number equals to 1 called unity number 
-	  r.Unity(r.val);
+	  r.Unity(r.val); // FInd Unity Without using recursive method
 	 if( r.UnityRecursive(r.val)==1)
 	 {
 		 System.out.println(" Given Number is unity Number");
