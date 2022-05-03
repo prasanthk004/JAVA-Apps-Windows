@@ -1,5 +1,7 @@
 package Java.basics;
 
+import java.util.Scanner;
+
 public class StringOperations {
 	
 	  String x;
@@ -10,14 +12,19 @@ public class StringOperations {
 		return x;
 	}
 
-	public void setX(String x) {
-		this.x = x;
+	public void setX() {
+		Scanner in = new Scanner(System.in);
+		
+		System.out.printf(" Enter the String : ");
+		x=in.nextLine();
+ 		
+		in.close();
 	}
 
 	public static void main(String[] args) {
 		StringOperations s = new StringOperations();
-		s.setX("My N KP8 @@ ");
-	//	s.StringAnalysis();
+		s.setX();
+		s.StringAnalysis();
 	  
  
 
