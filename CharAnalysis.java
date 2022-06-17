@@ -21,7 +21,8 @@ public class CharAnalysis {
 	private void Analysis() {
 		// TODO Auto-generated method stub
 		
-		String s="xyy";
+		String s="xyz";
+		String rs ;
 		char c[];
 		int i ;
 		c=s.toCharArray();
@@ -42,7 +43,7 @@ public class CharAnalysis {
 		   }
 		}
 		
-		
+		 
 		System.out.printf("\n\n x = %c y = %c z=%c  ",c[0],c[1],c[2]);
 		
 		
