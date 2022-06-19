@@ -30,5 +30,5 @@ public class ArrayExcersise {
 			System.out.printf("%3d %3d",a[i],a[a.length-i-1]);
 		}
 	}
-
+ // Test 
 }
