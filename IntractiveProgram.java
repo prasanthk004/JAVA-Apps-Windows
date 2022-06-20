@@ -75,7 +75,7 @@ public class IntractiveProgram {
 		System.out.printf("\n Player Name    : %s",name);
 		System.out.printf("\n No of Attempts : %d",attempts);
 		System.out.printf("\n Total Scores   : %d",score);
-		System.out.printf("\n       Failed   : %d",fail);
+		System.out.printf("\n       Failes   : %d",fail);
 		
 
  
