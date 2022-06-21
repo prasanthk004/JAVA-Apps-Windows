@@ -1,17 +1,48 @@
 package Java.basics;
 
+import java.util.Random;
+import java.util.Scanner;
+
 public class MaxMin {
 	
-	int a[]= {35,18,36,36,30};
+	int a[] ;
+	Scanner sc = new Scanner(System.in);
  
 
 	public static void main(String[] args) {
 		
 		
 		MaxMin mx = new MaxMin();
-		
+		mx.getInputArray();
+
 		//mx.FindMax();
 		mx.FindSecMax();
+	}
+
+
+	private void getInputArray() {
+		// TODO Auto-generated method stub
+	  int n ; 
+	  Random R = new Random();
+	  System.out.printf(" Enter the Length Of Array  : ");
+	  n=sc.nextInt();
+	  a  = new int [n];
+	  
+		System.out.println();
+		System.out.println();
+
+	  
+	  for(int i=0 ; i<a.length;i++)
+	  {
+		  a[i]=R.nextInt(0, 100);
+		  System.out.printf("%3d ",a[i]);
+	  }
+	System.out.println();
+	System.out.println();
+	System.out.println();
+
+	System.out.println();
+
 	}
 
 
