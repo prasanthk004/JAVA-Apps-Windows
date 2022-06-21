@@ -34,7 +34,7 @@ public class MaxMin {
 	  
 	  for(int i=0 ; i<a.length;i++)
 	  {
-		  a[i]=R.nextInt(0, 100);
+		  a[i]=R.nextInt(2014, 2514);
 		  System.out.printf("%3d ",a[i]);
 	  }
 	System.out.println();
