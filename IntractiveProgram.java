@@ -43,7 +43,7 @@ public class IntractiveProgram {
 		
 		range=FindDigits(digits); // calling FindDigits  function  to set the range to generate random number (if digits count 5 function will return 10000)
 		
-		
+		System.out.println(range);
 		
 		do {
 		
