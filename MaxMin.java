@@ -84,8 +84,8 @@ public class MaxMin {
 				max=a[i];
 				
 			}
-			else if(a[i]>smax&&a[i]!=max)
-			{
+			else if(a[i]>smax&&a[i]!=max) // Checking if given value greater than smax and !=max & Changing Smax value
+			{ 
 				smax=a[i];
 			}
 			
@@ -94,7 +94,7 @@ public class MaxMin {
 		
 		System.out.println(" MAX  "+max);
 		System.out.println(" SMAX "+smax);
-		
+	  
 		
 	}
 	
